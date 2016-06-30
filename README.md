@@ -10,6 +10,11 @@ You can use Angular, React, Ember or even other languages like PureScript, TypeS
 
 When you are done, either upload your finished challenge to github and let us know, or send us the source code directly to `martin.broder@vimcar.com`
 
+## Rationale
+
+Notice that this challenge has nothing to do with what we usually do, it's rather an experiment to see how you structure your application
+and think about strategies to solve common use cases.
+
 ## What should be done
 
 The challenge is to code a really simple shop with the following features:
