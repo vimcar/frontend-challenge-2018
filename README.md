@@ -5,7 +5,7 @@ Welcome to the Vimcar Coding Challenge!
 The challenge is here to get a basic understanding of your current knowledge and skills. It is not intended to make this a 100% working and fully functional online shop.
 We want to see how you think and solve common problems.
 
-Feel free to use any frameworks/libs of your liking to achieve this (except some, see [Rules](#Rules) below).
+Feel free to use any frameworks/libs of your liking to achieve this (except some, see [Rules](#rules) below).
 You can use Angular, React, Ember or even other languages like PureScript, TypeScript, Elm etc.
 
 When you're finished, either upload your challenge to github and let us know, or send the source code directly to `martin.broder@vimcar.com`
