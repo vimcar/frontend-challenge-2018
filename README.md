@@ -22,15 +22,16 @@ The challenge is to code a really simple shop with the following features:
 - "Add to Cart" button
 - A cart that counts and shows the items added by the user
 - The items should be removable again from the cart
+- Stick to the [design](https://github.com/vimcar/frontend-challenge/tree/master/design)
 
-The option to 'remove' an item again is missing in the layout, so it is up to you how you handle this.
+The option to 'remove' an item again is missing in the layout, so it is up to you how to handle this.
 
 ## Rules
 
-- shouldn't take longer than 2-3 hours (let us know before you start!)
-- clear, structured, consistent code that follows best practices
-- no use of jQuery, Bootstrap, "Regular" CSS (use Sass, LESS, inline-styles... etc.)
-- allowed to use any lib/framework EXCEPT jQuery/Zepto or Bootstrapping frameworks like Bootstrap/Foundation etc.
-- the source must be written in English, no language-specific variables like `const HoeheMalBreiteMalTiefe = 'DREITAUSEND MAL FUENFUNDZWANZIG'`.
-- you are allowed to use a bootstrapping repo to get started quickly (like [react-starter](https://github.com/kriasoft/react-starter-kit))
-- have fun!
+- Shouldn't take longer than 2-3 hours (let us know before you start!)
+- Clear, structured, consistent code that follows best practices
+- No use of jQuery, Bootstrap, "Regular" CSS (use Sass, LESS... or else)
+- Allowed to use any lib/framework EXCEPT jQuery/Zepto or Bootstrapping frameworks like Bootstrap/Foundation etc.
+- The source must be written in English, no language-specific variables like `const HoeheMalBreiteMalTiefe = 'DREITAUSEND MAL FUENFUNDZWANZIG'`.
+- You are allowed to use a bootstrapping repo to get started quickly (like [react-starter](https://github.com/kriasoft/react-starter-kit))
+- Have fun!
