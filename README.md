@@ -28,10 +28,9 @@ The option to 'remove' an item again is missing in the layout, so it is up to yo
 
 ## Rules
 
-- Shouldn't take longer than 2-3 hours (let us know before you start!)
-- Clear, structured, consistent code that follows best practices
-- No use of jQuery, Bootstrap, "Regular" CSS (use Sass, LESS... or else)
-- Allowed to use any lib/framework EXCEPT jQuery/Zepto or Bootstrapping frameworks like Bootstrap/Foundation etc.
-- The source must be written in English, no language-specific variables like `const HoeheMalBreiteMalTiefe = 'DREITAUSEND MAL FUENFUNDZWANZIG'`.
-- You are allowed to use a bootstrapping repo to get started quickly (like [react-starter](https://github.com/kriasoft/react-starter-kit))
+- Shouldn't take longer than 2-3 hours - let us know before you start!
+- Clear, structured, consistent code that follows best practices.
+- No use of jQuery, Zepto, Bootstrap etc.
+- Source Code must be written in English, no language-specific variables like `const HoeheMalBreiteMalTiefe = 'DREITAUSEND MAL FUENFUNDZWANZIG'`.
+- You are allowed to use a quickstarter repo to get started quickly, e.g. [create-react-app](https://github.com/facebookincubator/create-react-app).
 - Have fun!
