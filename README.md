@@ -22,7 +22,7 @@ We need the following features:
 
 ## Implementation details
 
-To validate that there are enough items in stock, you should use the backend. Since we haven't implemented one, you can mock the API client side.
+To validate that there are enough items in stock, you should use the backend. We implemented a mock for `fetch`. You may use it in your implementation. It's located in [the `/api/mock.js` module](https://github.com/vimcar/frontend-challenge/tree/master/api/mock.js).
 
 The API specification can be found [here](https://github.com/vimcar/frontend-challenge/tree/master/api.swagger.yml). You can use the online [Swagger editor](http://editor.swagger.io/) to view it.
 
