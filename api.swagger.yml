@@ -1,0 +1,42 @@
+swagger: "2.0"
+info:
+  description: "Super Fancy Watch Store"
+  version: "1.0.0"
+  title: "Fancy Watch Store"
+host: "example.com"
+basePath: "/-/v1"
+schemes:
+- "https"
+paths:
+  /stock/reserve:
+    post:
+      summary: "Reserve certain stock items for a user"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            $ref: "#/definitions/ReserveRequest"
+      responses:
+        204:
+          description: "Stock successfully reserved."
+        418:
+          description: "Failed to reserve item. Out of stock."
+        500:
+          description: "Something went wrong."
+
+definitions:
+  ReserveRequest:
+    description: "Stock items to be reserved"
+    type: "array"
+    items:
+      type: "object"
+      properties:
+        urn:
+          type: "string"
+        quantity:
+          type: "number"

@@ -1,0 +1,22 @@
+{
+  "name": "frontend-challenge",
+  "version": "1.0.0",
+  "description": "Welcome to the Vimcar Coding Challenge!",
+  "main": "api/mock.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vimcar/frontend-challenge.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/vimcar/frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/vimcar/frontend-challenge#readme",
+  "private": true,
+  "devDependencies": {
+    "jest": "22.4.0"
+  }
+}
