@@ -21,7 +21,7 @@ const fetch = (
 }
 
 const responses = {
-  'POST:https://example.com/-/stock/reserve': () => {
+  'POST:https://example.com/-/v1/stock/reserve': () => {
     const responseFactor = Math.random()
     if (responseFactor < 0.1) {
       return Promise.resolve({

@@ -28,12 +28,12 @@ describe('fetch', () => {
     })
   })
 
-  describe('https://example.com/-/stock/reserve', () => {
+  describe('https://example.com/-/v1/stock/reserve', () => {
     describe('success', () => {
       const setup = async () => {
         mockRandom(1)
         return await fetch(
-          'https://example.com/-/stock/reserve',
+          'https://example.com/-/v1/stock/reserve',
           {
             method: 'POST',
             body: {
@@ -64,7 +64,7 @@ describe('fetch', () => {
       const setup = async () => {
         mockRandom(0.05)
         return await fetch(
-          'https://example.com/-/stock/reserve',
+          'https://example.com/-/v1/stock/reserve',
           { method: 'POST' }
         )
       }
@@ -89,7 +89,7 @@ describe('fetch', () => {
       const setup = async () => {
         mockRandom(0.15)
         return await fetch(
-          'https://example.com/-/stock/reserve',
+          'https://example.com/-/v1/stock/reserve',
           { method: 'POST' }
         )
       }
