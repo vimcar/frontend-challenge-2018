@@ -1,0 +1,27 @@
+.cart__link {
+    display: block;
+    height: 1.5em;
+    width: 2em;
+    position: relative;
+}
+
+.cart__link__badge {
+    position: absolute;
+    top: -0.7em;
+    right: -1em;
+    
+    background: #333;
+    color: #fff;
+    border-radius: 45%;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: .8em;
+
+    height: 1.4em;
+    width: 1.8em;
+}
+
+.cart__link__image {
+    width: 1.5em;
+    height: 2em;
+}

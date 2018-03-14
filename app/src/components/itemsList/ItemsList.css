@@ -1,0 +1,7 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: calc(4*17em + 8em);
+  margin: 0 auto;
+}
