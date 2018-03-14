@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.5"
+  },
+  "jest": {
+    "testMatch": ["**/__tests__/**/*.js"]
   }
 }
