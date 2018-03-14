@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import alertify from 'alertify.js'
 
 import Spacer from './components/spacer'
 import Header from './components/header'
 import ItemsList from './components/itemsList'
 import * as api from './lib/api'
-import { RESERVE_SUCCESS } from './constants/api'
+import { RESERVE_SUCCESS, RESERVE_OUT_OF_STOCK, RESERVE_ERROR } from './constants/api'
 
 import './App.css'
 
@@ -66,6 +67,8 @@ class App extends Component {
       }
     ]
     this.onAddItemToCart = this.onAddItemToCart.bind(this)
+
+    alertify.logPosition('top right')
   }
 
   async onAddItemToCart(id) {
@@ -74,13 +77,17 @@ class App extends Component {
     const quantity = 1
 
     const reserveResult = await api.reserveItem({urn, quantity})
+
     if (reserveResult === RESERVE_SUCCESS) {
       return this.setState({
         cartItems: [...cartItems, id]
       })
+    } else if (reserveResult === RESERVE_OUT_OF_STOCK) {
+      alertify.log('Failed to reserve item. Out of stock.')
+      return false
     } else {
-      // show error message to the user
-      return
+      alertify.error('Something went wrong.')
+      return false
     }
   }
 

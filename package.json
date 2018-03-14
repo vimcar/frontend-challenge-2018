@@ -21,9 +21,12 @@
     "jest": "22.4.0"
   },
   "dependencies": {
+    "alertify.js": "^1.0.12",
     "classnames": "^2.2.5"
   },
   "jest": {
-    "testMatch": ["**/__tests__/**/*.js"]
+    "testMatch": [
+      "**/__tests__/**/*.js"
+    ]
   }
 }
