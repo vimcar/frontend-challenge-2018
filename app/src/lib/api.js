@@ -19,7 +19,6 @@ export const reserveItem = ({urn, quantity}) => {
             case 500: return RESERVE_ERROR
             default:
                 throw new Error('[API reserveItem] Not handled response status')
-                return RESERVE_ERROR
         }
     })
     .catch(console.error)
