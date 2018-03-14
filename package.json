@@ -4,7 +4,8 @@
   "description": "Welcome to the Vimcar Coding Challenge!",
   "main": "api/mock.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "cd app && yarn start"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "private": true,
   "devDependencies": {
     "jest": "22.4.0"
+  },
+  "dependencies": {
+    "alertify.js": "^1.0.12",
+    "classnames": "^2.2.5"
   }
 }

@@ -1,0 +1,55 @@
+.item {
+    position: relative;
+    width: 17em;
+}
+
+.item__photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    width: 17em;
+    height: 17em;
+
+    box-shadow: 0px 0px 20px 0px #dcdcdc;
+}
+
+.item__photo--hovered {
+    box-shadow: 0px 0px 20px 4px #dcdcdc;
+}
+
+.item__photo__image {
+    transition: 500ms opacity;
+}
+
+.item__photo__image--hovered {
+    opacity: 0.2;
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover__link {
+    width: 11em;
+    height: 3em;
+
+    border: 2px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover__link:hover {
+    text-decoration: underline;
+}

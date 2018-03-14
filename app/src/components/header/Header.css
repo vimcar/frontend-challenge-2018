@@ -1,0 +1,20 @@
+:root {
+  --cart-width: 8em;
+}
+
+.header {
+  height: 8em;
+  
+  display: grid;
+  grid-template-columns: auto var(--cart-width);
+  align-items: center;
+}
+
+.header__logo {
+  height: 1.5em;
+  margin-right: calc(-1 * var(--cart-width));
+}
+
+.header__cart {
+  height: 1.5em;
+}
