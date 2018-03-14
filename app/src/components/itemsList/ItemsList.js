@@ -4,10 +4,10 @@ import Item from '../item'
 
 import './ItemsList.css'
 
-const ItemsList = ({items}) =>
+const ItemsList = ({items, onAddItemToCart}) =>
     <div className='items'>
     {
-        items.map(item => <Item {...item} key={item.id} />)
+        items.map(item => <Item key={item.id} {...item} onAddToCart={onAddItemToCart} />)
     }
     </div>
 

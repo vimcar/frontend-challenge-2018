@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 import Spacer from '../spacer'
@@ -15,6 +16,7 @@ class Item extends Component {
 
         this.handleMouseOver = this.handleMouseOver.bind(this)
         this.handleMouseLeave = this.handleMouseLeave.bind(this)
+        this.handleAddToCartClick = this.handleAddToCartClick.bind(this)
     }
 
     handleMouseOver() {
@@ -27,6 +29,11 @@ class Item extends Component {
         this.setState({
             isHovered: false
         })
+    }
+
+    handleAddToCartClick() {
+        const {onAddToCart, id} = this.props
+        onAddToCart(id)
     }
 
     render() {
@@ -49,7 +56,7 @@ class Item extends Component {
                     <img src={itemImageSrc} className={itemPhotoImageClass} alt={name} />
                     {isHovered &&
                         <div className='item__photo__cover cover'>
-                            <a className='cover__link' href='#'>Add to Cart</a>
+                            <a className='cover__link' onClick={this.handleAddToCartClick}>Add to Cart</a>
                         </div>
                     }
                 </div>
@@ -60,6 +67,14 @@ class Item extends Component {
             </div>
         </Spacer>
     }
+}
+
+Item.propTypes = {
+    id: PropTypes.number,
+    name: PropTypes.string,
+    imageSrc: PropTypes.string,
+    imageSrc2x: PropTypes.string,
+    onAddToCart: PropTypes.func
 }
 
 export default Item

@@ -8,6 +8,9 @@ import './App.css'
 class App extends Component {
   constructor() {
     super()
+    this.state = {
+      cartItems: []
+    }
 
     this.items = [
       {
@@ -59,15 +62,25 @@ class App extends Component {
         imageSrc2x: require('./resources/images/h42ss-stbk-sel-201603@2x.png')
       }
     ]
+    this.onAddItemToCart = this.onAddItemToCart.bind(this)
+  }
+
+  onAddItemToCart(id) {
+    const cartItems = this.state.cartItems
+    this.setState({
+      cartItems: [...cartItems, id]
+    })
   }
 
   render() {
+    const {cartItems} = this.state
+
     return (
       <div className='app'>
-        <Header />
+        <Header cartItems={cartItems}/>
         
         <Spacer top={4}>
-          <ItemsList items={this.items}/>
+          <ItemsList items={this.items} onAddItemToCart={this.onAddItemToCart}/>
         </Spacer>
       </div>
     )
