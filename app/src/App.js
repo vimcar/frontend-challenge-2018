@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 import Spacer from './components/spacer'
 import Header from './components/header'
 import ItemsList from './components/itemsList'
+import * as api from './lib/api'
+import { RESERVE_SUCCESS } from './constants/api'
+
 import './App.css'
 
 class App extends Component {
@@ -65,11 +68,20 @@ class App extends Component {
     this.onAddItemToCart = this.onAddItemToCart.bind(this)
   }
 
-  onAddItemToCart(id) {
+  async onAddItemToCart(id) {
     const cartItems = this.state.cartItems
-    this.setState({
-      cartItems: [...cartItems, id]
-    })
+    const urn = id
+    const quantity = 1
+
+    const reserveResult = await api.reserveItem({urn, quantity})
+    if (reserveResult === RESERVE_SUCCESS) {
+      return this.setState({
+        cartItems: [...cartItems, id]
+      })
+    } else {
+      // show error message to the user
+      return
+    }
   }
 
   render() {
