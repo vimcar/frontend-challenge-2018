@@ -3,7 +3,7 @@ import {RESERVE_SUCCESS, RESERVE_OUT_OF_STOCK, RESERVE_ERROR} from '../constants
 
 export const reserveItem = ({urn, quantity}) => {
     return fetch(
-        'https://example.com/-/stock/reserve',
+        'https://example.com/-/v1/stock/reserve',
         {
             method: 'POST',
             body: {
